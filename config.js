@@ -26,7 +26,8 @@ module.exports = {
   ],
   author: {
     name: 'Alejandro Llorente',
-    photo: '/photo.jpg',
+    photo: '/photo_75x75.jpg',
+    image: '/photo.jpg',
     bio: 'Estudiante autodidacta de programacion web full stack',
     contacts: {
       email: 'alejandrollorente.dev@gmail.com',

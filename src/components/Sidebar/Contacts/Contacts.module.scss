@@ -26,7 +26,11 @@
       line-height: $button-height;
       border-radius: 50%;
       text-align: center;
-      border: 1px solid $color-gray-bg;
+      border: 1px solid $color-gray;
+
+      // &:hover {
+      //   border: 1px solid $color-secondary;
+      // }
 
       &-link {
         border: 0;

@@ -26,8 +26,10 @@
         }
 
         &--active {
-          color: $color-base;
-          border-bottom: 1px solid $color-base;
+          color: $color-secondary;
+          border-bottom: 1px solid $color-secondary;
+          // color: $color-base;
+          // border-bottom: 1px solid $color-base;
         }
 
       }
