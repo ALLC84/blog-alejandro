@@ -1,14 +1,14 @@
 'use strict';
 
 module.exports = {
-  url: 'https://alejandrollorente.com',
+  url: 'https://blog.alejandrollorente.com',
   pathPrefix: '/',
   title: 'Blog de Alejandro Llorente',
   subtitle: 'Estudiante autodidacta de programacion web full stack',
   copyright: '© Todos los derechos reservados.',
-  disqusShortname: '',
+  disqusShortname: 'ALlC84',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-148482990-1',
   useKatex: false,
   menu: [
     {
