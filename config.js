@@ -6,7 +6,7 @@ module.exports = {
   title: 'Blog de Alejandro Llorente',
   subtitle: 'Estudiante autodidacta de programacion web full stack',
   copyright: '© Todos los derechos reservados.',
-  disqusShortname: 'ALlC84',
+  disqusShortname: 'blog-alejandrollorente',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-148482990-1',
   useKatex: false,

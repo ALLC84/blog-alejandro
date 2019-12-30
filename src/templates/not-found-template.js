@@ -1,5 +1,6 @@
 // @flow strict
 import React from 'react';
+import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
@@ -12,7 +13,8 @@ const NotFoundTemplate = () => {
     <Layout title={`Not Found - ${title}`} description={subtitle}>
       <Sidebar />
       <Page title="NOT FOUND">
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <p>Acabas de llegar a una ruta que no existe.</p>
+        <Link to={'/'}>Volver a zona segura</Link>
       </Page>
     </Layout>
   );
