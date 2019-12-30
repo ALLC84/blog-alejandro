@@ -28,6 +28,7 @@ const Layout = ({
       <Helmet>
         <html lang="es" />
         <title>{title}</title>
+        <link rel="dns-prefetch" href="https://blog.alejandrollorente.com"/>
         <meta name="description" content={description} />
         <meta property="og:site_name" content={title} />
         <meta property="og:image" content={metaImageUrl} />
