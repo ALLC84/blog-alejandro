@@ -1,44 +1,44 @@
 ---
+template: post
 title: Markdown en ReactJS
-date: "2019-12-29"
-template: "post"
+slug: marckdown-en-reactjs
 draft: false
-slug: "marckdown-en-reactjs"
-category: "ReactJS"
+date: '2019-12-29'
+description: >-
+  Cubriremos como incluir Markdon en React.js de la forma simple y práctica
+  posible.
+category: ReactJS
 tags:
-  - "ReactJS"
-  - "Markdown"
-  - "Web Development"
-description: "Cubriremos como incluir Markdon en React.js de la forma simple y práctica posible."
-socialImage: "/media/react _markdown.jpg"
+  - ReactJS
+  - Markdown
+  - Web Development
 ---
-
 #### Hoy aprenderemos de forma sencilla como utilizar [Markdown](https://daringfireball.net/projects/markdown/) a una App hecha en **react.js**
-
 
 > En este post damos por hecho que tenga insatalado **node.js** y **nmp**, \
 > necesarios para crear nuestra App **react.js**
 
-
 **Empezaremos creando nuestra App de prueba**
 
-- Abrimos un terminal y nos posicionamos en la carpeta donde queremos crear el proyecto.
-  - Ejemplo: `cd usuario/documentos/react`
+* Abrimos un terminal y nos posicionamos en la carpeta donde queremos crear el proyecto.
 
-- Una vez posicionado en la carpeta deseada escribimos en la terminal
-
+  * Ejemplo: `cd usuario/documentos/react`
+* Una vez posicionado en la carpeta deseada escribimos en la terminal
 
 Crearemos un nuevo proyecto React, donde `my-app` puede ser el nombre de nuestra elección.
-
 
 ```javascript
 npx create-react-app my-app
 ```
+
 Nos movemos a la carpeta del proyecto creado
+
 ```javascript
 cd my-app
 ```
+
 Ejecutamos nuestra App React por primera vez
+
 ```javascript
 npm start
 ```
@@ -48,16 +48,15 @@ Tenemos varias opciones para incluir **Markdown** en **React** utilizando librer
 En este caso utilizaremos **Marked** por su facilidad de uso y sus buenas opciones de configuración.
 
 El primer paso es instalar la librería
+
 ```javaScript
 npm install marked
 ```
 
-Nos dirigimos a nuesto archivo **App.js** e importamos la librería 
-**marked**
-- En este ejemplo utilizaremos **marked** en su forma mas simple,
-crearemos una función que le pasaremos dos parametros, el primero
-el contenido y el segundo el id del contenedor donde queremos introducirlo.
+Nos dirigimos a nuesto archivo **App.js** e importamos la librería  **marked**
 
+* En este ejemplo utilizaremos **marked** en su forma mas simple, crearemos una función que le pasaremos dos parametros, el primero
+  el contenido y el segundo el id del contenedor donde queremos introducirlo.
 
 ```javascript
 import React, {useEffect} from 'react'
@@ -85,9 +84,7 @@ Ahora configuraremos un poco **marked** pasando unas opciones de nuestras prefer
 
 En este caso crearemos un componente de react para reutilizarlo simpre que necesitemos, ya estara preparado con nuestra configuración deseada.
 
-- En nuestra carpeta `src` creamos una nueva carpeta llamada `components`
-donde incluiremos un archivo que le llamaremos `parseMarkdownToHtml.js`
-
+* En nuestra carpeta `src` creamos una nueva carpeta llamada `components` donde incluiremos un archivo que le llamaremos `parseMarkdownToHtml.js`
 
 ```javascript
 import marked from 'marked'
@@ -114,7 +111,7 @@ export default parseMarkdownToHtml
 
 Puedes ver en la documentación oficial de [Marked](https://marked.js.org/#/README.md) todas las opciones posibles y el fin de cada una de ellas e incluir las que crean convenientes según proyecto.
 
-- Volviendo a nuestro **App.js**
+* Volviendo a nuestro **App.js**
 
 Es hora de utilizar nuestro **componente personalizado**
 
@@ -134,12 +131,12 @@ const App = () => {
 export default App
 ```
 
-
 > Si has llegado hasta aquÃ­ seguro te interesa saber como darle un poco de estilos a nuestro **Markdown** 
 
 Para ello utilizaremos dos vás de personalización
-- Una de ellas serÃ¡ un archivo `style.css` para algunos estilos personalizados de nuestras etiquetas.
-- Y para el resaltado de nuestras etiquetas `<pre>`,  `<code>` utilizaremos la libreria `highlight.js` que trabajarán junto con **Marked** de forma perfecta.
+
+* Una de ellas serÃ¡ un archivo `style.css` para algunos estilos personalizados de nuestras etiquetas.
+* Y para el resaltado de nuestras etiquetas `<pre>`,  `<code>` utilizaremos la libreria `highlight.js` que trabajarán junto con **Marked** de forma perfecta.
 
 Lo primero que haremos será instalar la libreria `highlight.js` en nuestro proyecto como hemos hecho con **Marked** anteriormente.
 
@@ -332,9 +329,7 @@ Habras visto la importación de la nueva libreria instalada y como la incluimos 
 
 Tambien hacemos la importación de los estilos para la apariencia de nuestro resaltado de código.
 
-Podemos encontrar todos los estilos disponibles en la carpeta **node_modules**
-`node_modules/highlight.js/styles/` 
-
+Podemos encontrar todos los estilos disponibles en la carpeta **node_modules** `node_modules/highlight.js/styles/` 
 
 He intentado ser lo mas breve posible, dejando sin explicar a fondo las librerias utilizadas para nuestros ejemplos, queda a su disposición los enlaces a cada una de ellas donde podrás investigar a 100% sus detalles.
 
@@ -342,8 +337,4 @@ Gracias por llegar hasta el final del post y de verdad espero les haya servido d
 
 > Para no extender mas dejamos para un siguiente post el incluir **Markdown** desde un archivo `.md` proveniente de una carpeta del proyecto ó desde una base de datos. Seguramente utilizaremos [Firebase](https://firebase.google.com/) para nuestro ejemplo.
 >
-> **Les dejaré el enlace cuando este disponible** 
-
-
-
-
+> **Les dejaré el enlace cuando este disponible**
