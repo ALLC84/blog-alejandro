@@ -55,8 +55,7 @@ npm install marked
 
 Nos dirigimos a nuesto archivo **App.js** e importamos la librería  **marked**
 
-* En este ejemplo utilizaremos **marked** en su forma mas simple, crearemos una función que le pasaremos dos parametros, el primero
-  el contenido y el segundo el id del contenedor donde queremos introducirlo.
+* En este ejemplo utilizaremos **marked** en su forma mas simple, crearemos una función que le pasaremos dos parametros, el primero el contenido y el segundo el id del contenedor donde queremos introducirlo.
 
 ```javascript
 import React, {useEffect} from 'react'
